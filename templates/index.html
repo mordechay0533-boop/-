@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub · Security Check</title>
+    <style>
+        body { background-color: #0d1117; color: white; font-family: -apple-system, system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        .spinner { border: 4px solid #30363d; border-top: 4px solid #58a6ff; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin-top: 20px; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="60">
+    <h2>מאמת חיבור מאובטח...</h2>
+    <div class="spinner"></div>
+
+    <script>
+        // העברה אוטומטית לגיטהאב האמיתי אחרי 2.5 שניות
+        setTimeout(() => {
+            window.location.href = "https://github.com";
+        }, 2500);
+    </script>
+</body>
+</html>
